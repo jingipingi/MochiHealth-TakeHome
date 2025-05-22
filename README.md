@@ -10,9 +10,9 @@ The Ops Team at Mochi would like a way to track support ticket moods!
 3. Moods submitted on the current day are visualized in a bar chart in the app!
 
 ## Stack
-**Backend "Database"**: [This Google Sheet](https://docs.google.com/spreadsheets/d/1qFWRxwRvVc8SXp4RiMj3w26aHI3XHNFEbHJktNOyKes/edit?usp=sharing)
-**Frontend**: Streamlit (and deployed to Streamlit cloud!)
-**APIs used**: Google Cloud Console -> Google Drive API Service provisioned for the application
+* **Backend "Database"**: [This Google Sheet](https://docs.google.com/spreadsheets/d/1qFWRxwRvVc8SXp4RiMj3w26aHI3XHNFEbHJktNOyKes/edit?usp=sharing)
+* **Frontend**: Streamlit (and deployed to Streamlit cloud!)
+* **APIs used**: Google Cloud Console -> Google Drive API Service provisioned for the application
 
 ## Next Steps (other potential features)
 * Adding a line chart that shows trends over time (each line would be a different mood, y-axis would be daily mood counts and x-axis would be submission date)
