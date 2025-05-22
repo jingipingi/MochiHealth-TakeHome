@@ -19,7 +19,7 @@ sheet = client.open("Mood Queue Log").sheet1  # assumes the sheet exists with he
 st.title("🧠 Mood of the Queue")
 st.subheader("Log the moods you're seeing on tickets!")
 
-mood = st.selectbox("Select a mood:", ["😊", "😠", "😕", "🎉"])
+mood = st.selectbox("Select a mood:", ["😊", "😠", "😕", "🎉", "Other"])
 note = st.text_input("Optional note:")
 
 if st.button("Submit Mood"):
