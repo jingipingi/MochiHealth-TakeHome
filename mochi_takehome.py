@@ -16,7 +16,7 @@ client = gspread.authorize(credentials)
 sheet = client.open("Mood Queue Log").sheet1  # assumes the sheet exists with headers: Timestamp, Mood, Note
 
 # --- Log Mood UI ---
-st.title("🧠 Mood of the Queue")
+st.title("Mood of the Ticket Queue")
 st.subheader("Log the moods you're seeing on tickets!")
 
 mood = st.selectbox("Select a mood:", ["😊", "😠", "😕", "🎉", "Other"])
@@ -57,4 +57,24 @@ if raw_records:
         st.warning("Data format issue: missing expected columns.")
 else:
     st.info("No mood entries have been logged yet. Start the trend!")
+
+# Signature :)
+st.markdown(
+    """
+    <style>
+    .footer {
+        position: fixed;
+        bottom: 10px;
+        width: 100%;
+        text-align: center;
+        color: gray;
+        font-size: 0.9em;
+    }
+    </style>
+    <div class="footer">
+        Made by Juliana Noronha
+    </div>
+    """,
+    unsafe_allow_html=True
+)
 
